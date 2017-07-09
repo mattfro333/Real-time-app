@@ -19,7 +19,7 @@ const css = require('./App.sass')
                     <Router>
                         <Switch>
                             //Remove h1 tag and place Route tags
-                            <h1>React Webpack2 boilerplate</h1>
+                            <h1>React Webpack2 boilerplate mang</h1>
                         </Switch>
                     </Router>
                 </Provider>
