@@ -5,7 +5,8 @@ const css = require('./App.sass')
     import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
     import {createStore} from 'redux'
     import {Provider} from 'react-redux'
-
+    import socket from 'socket.io-client'
+    socket('http://localhost:3000')
     import manageStore from '../../reducer.js'
 
     let store = createStore(manageStore)
