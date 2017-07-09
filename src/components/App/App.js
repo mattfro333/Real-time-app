@@ -5,7 +5,8 @@ const css = require('./App.sass')
     import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
     import {createStore} from 'redux'
     import {Provider} from 'react-redux'
-
+    import socket from 'socket.io-client'
+    socket('http://localhost:3000')
     import manageStore from '../../reducer.js'
 
     let store = createStore(manageStore)
@@ -18,7 +19,7 @@ const css = require('./App.sass')
                     <Router>
                         <Switch>
                             //Remove h1 tag and place Route tags
-                            <h1>React Webpack2 boilerplate mang</h1>
+                            <h1>React Webpack2 boilerplate mangy</h1>
                         </Switch>
                     </Router>
                 </Provider>
